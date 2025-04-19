@@ -21,6 +21,7 @@ The settings should now be in the language you defined.
 
 ## File structure
 ```
+LICENSE
 README.md
 gerkin_tests/
             ├── app

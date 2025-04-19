@@ -1,0 +1,11 @@
+<html>
+<body>
+<div id="user_profile" align="center">Welcome, <span id="email"></span></div>
+<script>
+const credentials = new URL(window.location.toLocaleString()).searchParams;
+const username = credentials.get('email').split('@')[0];
+let user = document.getElementById('email');
+user.innerHTML = username;
+</script>
+</body>
+</html>
