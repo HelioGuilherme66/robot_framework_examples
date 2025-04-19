@@ -37,3 +37,7 @@ gerkin_tests/
             ├── Português_Brasil.robot
             └── Português_Portugal.robot
 ```
+
+### See my YouTube channel
+Videos about RIDE and Robot Framework, [@About_RIDE](https://www.youtube.com/@About_RIDE)
+
