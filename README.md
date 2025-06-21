@@ -10,7 +10,7 @@ I recommend the use of [RIDE - Robot Framework IDE](https://github.com/robotfram
 
 ## Gerkin
 
-The tests are in `gerkin_tests`. They illustrate the use of `Language:` setting in the test cases. The default, English and both Portuguese variants. If you want to contribute with other languages, you can easily adapt to your language. In RIDE you can translate the settings automatically to your desired language:
+The tests are in `gerkin_tests`. They illustrate the use of `Language:` setting in the test cases. The default, English, French and both Portuguese variants. If you want to contribute with other languages, you can easily adapt to your language. In RIDE you can translate the settings automatically to your desired language:
 
 1. Make a copy of the .robot file
 2. Open that new file in RIDE
@@ -25,15 +25,19 @@ LICENSE
 README.md
 gerkin_tests/
             ├── app
-            │   ├── demo_app.html
-            │   ├── demo_app_pt_br.html
-            │   ├── demo_app_pt_pt.html
-            │   ├── user_profile.html
-            │   └── user_profile_pt.html
+            |   ├── demo_app_fr.html
+            |   ├── demo_app.html
+            |   ├── demo_app_pt_br.html
+            |   ├── demo_app_pt_pt.html
+            |   ├── user_profile_fr.html
+            |   ├── user_profile.html
+            |   └── user_profile_pt.html
+            ├── bank_variables_fr.py
             ├── bank_variables_pt_br.py
             ├── bank_variables_pt_pt.py
             ├── bank_variables.py
             ├── English.robot
+            ├── Français.robot
             ├── Português_Brasil.robot
             └── Português_Portugal.robot
 ```
