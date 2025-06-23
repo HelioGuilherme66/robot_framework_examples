@@ -45,3 +45,21 @@ gerkin_tests/
 ### See my YouTube channel
 Videos about RIDE and Robot Framework, [@About_RIDE](https://www.youtube.com/@About_RIDE)
 
+## Tests for the practice site, Expand Testing
+
+The [Expand Testing practice site](https://practice.expandtesting.com/) contains web pages and apps to practice test automation.
+We have some examples to apply on that practice site, that you can copy and experiment on your own.
+
+The directory `ExpandTesting` contains the tests organized by directories like the "cards" on the pages. The directory `extract_examples` is an exception. This task shows one way to obtain all the "cards" links and the description, and save to a file.
+
+## File structure
+```
+ExpandTesting/
+             ├── extract_examples
+             │   └── scrap_examples.robot
+             ├── Login
+             │   ├── login_resource.resource
+             │   ├── Login_tests.robot
+             │   └── login_variables.py
+             └── main_variables.py
+```
