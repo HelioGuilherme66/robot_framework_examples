@@ -63,3 +63,38 @@ ExpandTesting/
              │   └── login_variables.py
              └── main_variables.py
 ```
+
+## Tests for AppiumLibrary
+
+The project consists in Robot Framework and AppiumLibrary test suites.
+See the [README.md](./AppiumLibrary/README.md) of the project.
+
+## File structure
+```
+AppiumLibrary/
+             ├── Appium_swipe.robot
+             ├── mydrawingapp
+             │   ├── CHANGELOG
+             │   ├── LICENSE
+             │   ├── pyproject.toml
+             │   ├── README.rst
+             │   ├── src
+             │   │   ├── mydrawingapp
+             │   │   │   ├── app.py
+             │   │   │   ├── __init__.py
+             │   │   │   ├── __main__.py
+             │   │   │   └── resources
+             │   │   │       ├── android12_emulator.png
+             │   │   │       └── README
+             │   │   └── mydrawingapp.dist-info
+             │   │       ├── INSTALLER
+             │   │       ├── METADATA
+             │   │       ├── top_level.txt
+             │   │       └── WHEEL
+             │   └── tests
+             │       ├── __init__.py
+             │       ├── mydrawingapp.py
+             │       └── test_app.py
+             └── README.md
+
+```
