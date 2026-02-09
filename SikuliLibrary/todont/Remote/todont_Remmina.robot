@@ -16,7 +16,7 @@ ${BROWSER}        msedge
 Add new item
     Add Image Path    ${CURDIR}/../_images
     Windows Search    ${BROWSER}
-    Sleep    6 seconds
+    Sleep    16 seconds
     IF    "${BROWSER}" == "firefox"
         Type With Modifiers    N    CTRL
         Sleep    2 seconds

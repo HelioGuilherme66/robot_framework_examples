@@ -44,9 +44,7 @@ Run RDP
     VAR    ${password_prompt}    ${False}
     VAR    ${counter}    0
     WHILE    not ${password_prompt} and ${counter} < 10
-        Press Special Key    ENTER
-        Sleep    0.6 seconds
-        ${password_prompt}=    Exists    login_passwd.png
+        ${password_prompt}=    Exists    login_passwd.png    5
         IF    ${password_prompt}
             Click    login_passwd.png
             Sleep    0.6 seconds
@@ -54,6 +52,8 @@ Run RDP
         END
         ${counter}=    Evaluate    ${counter} + 1
         Sleep    5 seconds
+        Press Special Key    ENTER
+        Sleep    0.6 seconds
     END
 
 Login
@@ -64,7 +64,7 @@ Login
     ${result}=    Exists    login_passwd.png    5
     IF    ${result}
         Send Password
-        Wait Until Screen Contain    windows_menu.png    20
+        Wait Until Screen Contain    windows_menu.png    60
     END
 
 Send Password

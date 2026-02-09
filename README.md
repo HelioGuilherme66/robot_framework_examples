@@ -98,3 +98,32 @@ AppiumLibrary/
              └── README.md
 
 ```
+
+
+## Tests for SikuliLibrary
+
+The project consists in Robot Framework and SikuliLibrary test suites.
+See the [README.md](./SikuliLibrary/README.md) of the project.
+
+
+## File structure
+```
+SikuliLibrary/
+             ├── README.md
+             └── todont
+                 ├── _images
+                 │   ├── add.png
+                 │   ├── login_passwd.png
+                 │   ├── remmina_icon.png
+                 │   ├── todont_Remote.webm
+                 │   ├── windows_menu.png
+                 │   └── windows_search_white.png
+                 ├── Local
+                 │   └── todont_React.robot
+                 └── Remote
+                     ├── rdp.remmina
+                     ├── rdp.sh
+                     ├── remote.resource
+                     └── todont_Remmina.robot
+```
+
