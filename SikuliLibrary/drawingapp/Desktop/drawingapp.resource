@@ -14,13 +14,16 @@ Run MyDrawingApp
     Add Image Path    ${IMAGE_DIR}
     IF    ${OS_LINUX}
         ${APP_PROCESS}=    Start Process    /usr/bin/mydrawingapp
+        VAR    ${app_icon}    app_icon.png
     ELSE
-        ${APP_PROCESS}=    Start Process    mydrawingapp
+        ${APP_PROCESS}=    Start Process    C:\\Selenium_Drivers\\My Drawing App.exe
+        VAR    ${app_icon}    app_icon_windows.png
     END
-    Set Global Variable    ${APP_PROCESS}
-    # Sleep    10 seconds    # For now hard coded delay
+    Set Global Variable    \${APP_PROCESS}
+    Set Global Variable    \${app_icon}
+    # Sleep    4 seconds    # For now hard coded delay
     Set Min Similarity    0.80
-    Wait Until Screen Contain    ${app_icon}    10
+    Wait Until Screen Contain    ${app_icon}    30
     Click    ${app_icon}    xOffset=200
     @{rdp_coords}=    Get Image Coordinates    ${app_icon}
     IF    ${OS_LINUX}
