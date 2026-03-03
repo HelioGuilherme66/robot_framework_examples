@@ -4,14 +4,16 @@
 
 This project consists in Robot Framework and SikuliLibrary test suites.
 
-*Web App ToDon't*
+### Web App ToDon't
+
 It has two test suites, one at `Local` directory, to launch a browser and interact with a Web App, from the local system running Robot Framework. The other, at `Remote` directory, does the same interaction, but using a remote connection via the Remote Desktop Protocol (RDP).
 
 The test suites were tested in a Fedora Linux 42 with Robot Framework 7.4.1 and Python 3.13.11.
 
 We have a recording of the `Remote` test suite [here](./todont/_images/todont_Remote.webm).
 
-*App My Drawing App*
+### App My Drawing App
+
 See the Desktop test suite  [README.md](./drawingapp/README.md).
 
 ## File structure
