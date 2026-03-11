@@ -6,7 +6,7 @@ Library           Process
 ${OS_LINUX}       ${True}    # The host running Robot Framework
 ${IMAGE_DIR}      ${CURDIR}/../_images
 ${SCRCPY_PROCESS}    ${None}
-@{SCREEN_W_H}     334    762    # Dimensions of scrcpy window
+@{SCREEN_W_H}     446    1017    # Dimensions of scrcpy window taken from scrpy_my_phone.png
 ${remote_icon}    scrcpy_window_icon.png
 
 *** Keywords ***
@@ -43,7 +43,7 @@ Run ScrCpy
     IF    ${OS_LINUX}
         ${SCRCPY_PROCESS}=    Start Process    /home/helio/Transferências/scrcpy-linux-x86_64-v3.3.4/scrcpy
     ELSE
-        ${SCRCPY_PROCESS}=    Start Process    scrcpy
+        ${SCRCPY_PROCESS}=    Start Process    C:\\Selenium_Drivers\\start_scrcpy.cmd    # scrcpy
     END
     Set Global Variable    ${SCRCPY_PROCESS}
     Sleep    10 seconds    # For now hard coded delay
