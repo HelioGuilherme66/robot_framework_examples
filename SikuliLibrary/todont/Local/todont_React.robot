@@ -1,5 +1,6 @@
 *** Settings ***
 Library           SikuliLibrary
+Library           Process
 
 *** Variables ***
 ${BROWSER}        konqueror    # firefox | konqueror| google-chrome
@@ -7,7 +8,8 @@ ${BROWSER}        konqueror    # firefox | konqueror| google-chrome
 *** Test Cases ***
 Add new item
     Add Image Path    ${CURDIR}/../_images
-    Open Application    ${BROWSER}
+    # Open Application    ${BROWSER}
+    Start Process    ${BROWSER}
     Sleep    6 seconds
     IF    "${BROWSER}" == "firefox"
         Type With Modifiers    N    CTRL
@@ -23,4 +25,14 @@ Add new item
     Highlight    add.png    secs=2
     Click    add.png
     Sleep    2 seconds
+    Capture Screen
+
+Add new item with Text
+    # Set Ocr Language    eng
+    Set Ocr Text Read    true
+    # Wait Until Screen Contain    add.png    timeout=5
+    Click    add.png    xOffset=-200    # Clicks the input box at left of button
+    Input Text    ${EMPTY}    An item to click with Text
+    Sleep    2 seconds
+    Click Text    Add
     Capture Screen
